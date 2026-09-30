@@ -17398,7 +17398,7 @@ window.onload=function()
 							'Remember : cheated cookies taste awful!',
 							'Hey, Orteil here. Cheated cookies taste awful... or do they?',
 						])+' ===]');
-						if(localStorage.getItem('CookieClickerLang'))setTimeout(function(){Game.LoadMod("PForPause.js")},200);
+						if(localStorage.getItem('CookieClickerLang'))setTimeout(function()
 						//try {Game.Load(Game.Init);}
 						//catch(err) {console.log('ERROR : '+err.message);}
 					}
