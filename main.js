@@ -1,4 +1,4 @@
-﻿/*
+/*
 All this code is copyright Orteil, 2013-2026.
 	-with some help, advice and fixes by Nicholas Laux, Debugbro, Opti, the folks at Playsaurus, and lots of people on reddit, Discord, and the DashNet forums
 	-also includes a bunch of snippets found on stackoverflow.com and others
@@ -2670,7 +2670,7 @@ Game.Launch=function()
 		
 		Game.externalDataLoaded=false;
 		
-		Game.grandmaNames=['Granny','Gusher','Ethel','Edna','Doris','Maud','Hilda','Glados','Michelle','Michele','Phyllis','Millicent','Muriel','Heykel','Mildred','Mavis','Helen','Gloria','Sheila','Phemtn','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Chloe','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Cindy','Warty','Maxple','Emi'];
+		Game.grandmaNames=['Granny','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous'];
 		Game.customGrandmaNames=[];
 		Game.heralds=0;
 		
@@ -13586,7 +13586,7 @@ Game.Launch=function()
 		order=1475;Game.TieredAchievement('It\'s a kind of magic','','Wizard tower',8);
 		order=1500;Game.TieredAchievement('Make it so','','Shipment',8);
 		order=1600;Game.TieredAchievement('All that glitters is gold','','Alchemy lab',8);
-		order=1700;Game.TieredAchievement('H̸̷͓̳̳̯̟͕̟͍͍̣͡ḛ̢̦̰̺̮̝͖͖̘̪͉͘͡ ̠̦͕̤̪̝̥̰̠̫̖̣͙̬͘ͅC̨̦̺̩̲̥͉̭͚̜̻̝̣̼͙̮̯̪o̴̡͇̘͎̞̲͇̦̲͞͡m̸̩̺̝̣̹̱͚̬̥̫̳̼̞̘̯͘ͅẹ͇̺̜́̕͢s̶̙̟̱̥̮̯̰̦͓͇͖͖̝͘͘͞','','Portal',8);
+		order=1700;Game.TieredAchievement('H̸̷͓̳̳̯̟͕̟͍͍̣͡ḛ̢̦̰̺̮̝͖͖̘̪͉͘͡ ̠̦͕̤̪̝̥̰̠̫̖̣͙̬͘ͅC̨̦̺̩̲̥͉̭͚̜̻̝̣̼͙̮̯̪o̴̡͇̘͎̞̲͇̦̲͞͡m̸̩̺̝̣̹̱͚̬̥̫̳̼̞̘̯͘ͅẹ͇̺̜́̕͢s̶̙̟̱̥̮̯̰̦͓͇͖͖̝͘͘͞','','Portal',8);
 		order=1800;Game.TieredAchievement('Way back then','','Time machine',8);
 		order=1900;Game.TieredAchievement('Exotic matter','','Antimatter condenser',8);
 		order=2000;Game.TieredAchievement('At the end of the tunnel','','Prism',8);
@@ -17398,7 +17398,7 @@ window.onload=function()
 							'Remember : cheated cookies taste awful!',
 							'Hey, Orteil here. Cheated cookies taste awful... or do they?',
 						])+' ===]');
-						if(localStorage.getItem('CookieClickerLang'))setTimeout(function()
+						Game.Load(function(){Game.Init();if (firstLaunch) Game.showLangSelection(true);});
 						//try {Game.Load(Game.Init);}
 						//catch(err) {console.log('ERROR : '+err.message);}
 					}
